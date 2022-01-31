@@ -12,7 +12,7 @@ const MainLayout: FC<Props> = (props) => {
     <section className="flex flex-col min-h-screen">
       <TopAdvert />
       <Header />
-      <main className="flex-1 bg-red-600">{props.children}</main>
+      <main className="flex-1 bg-red-600-">{props.children}</main>
       <Footer />
     </section>
   );
