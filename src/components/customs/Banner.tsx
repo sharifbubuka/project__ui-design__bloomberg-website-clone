@@ -12,7 +12,7 @@ const Banner: FC<Props> = () => {
   return (
     <section className="bg-black text-gray-200 lg:justify-center h-max hidden lg:flex">
       <div className="w-full max-w-6xl">
-        <div className="flex items-center py-2">
+        <div className="flex items-center py-2 pl-8">
           {bannerLinks.map((link) => (
             <span key={link.id} className={`divider-x text-xs font-semibold pr-2 group border-gray-200 cursor-pointer ${link.id > 1 && "pl-2"} ${link.id < bannerLinks.length ? "border-r" : "border-none"} ${link.iconSrc && "text-yellow-500"}`}>
               <Link href={link.path} passHref>
@@ -34,7 +34,7 @@ const Banner: FC<Props> = () => {
           ))}
         </div>
 
-        <div className={`${bannerIsOpen ? "h-max" : "h-0"}`}>
+        <div className={`${bannerIsOpen ? "h-max" : "hidden"}`}>
             weewew
         </div>
       </div>

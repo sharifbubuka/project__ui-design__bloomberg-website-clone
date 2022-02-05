@@ -7,7 +7,7 @@ const Header: FC<Props> = () => {
     return (
         <header className="">
             <Banner />
-            <div></div>
+            <div>Sub Header</div>
         </header>
     )
 };
